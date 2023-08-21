@@ -1,0 +1,24 @@
+############################################################################################################
+Comandos importantes para React Native
+############################################################################################################
+
+Para criar uma aplicação mobile com app:
+	$ npx create-expo-app nome-projeto
+
+Para rodar o projeto:
+	$ npx expo start
+
+Para abrir o projeto no celular:
+	- Abrir a câmera e escanear o QrCode e o app Expo irá abrir o projeto;
+
+Para exibir na web:
+	- Para corrigir bugs da versão do expo:
+		$ npx expo install react-native-web@~0.19.6
+		$ npx expo install react-dom@18.2.0
+		$ npx expo install @expo/webpack-config
+	-Para corrigir erro antes de rodar na web:
+		- app.json
+			"web": {
+		      "favicon": "./assets/favicon.png",
+		      "bundler": "metro"
+		    }
