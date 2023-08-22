@@ -1,36 +1,28 @@
 import { StatusBar } from 'expo-status-bar';
-import { ScrollView, StyleSheet, Text, View } from 'react-native';
-import Card from './components/card';
+import { Button, ScrollView, StyleSheet, Text, View } from 'react-native';
+import Card from './components/Card';
+import Botoes from './components/Botoes';
 
 export default function App() {
   return (
     <ScrollView style={{ marginTop: 50 }}>
 
-      <View style={styles.card}>
-        <Text style={styles.textoBorda}>Funciona por favor</Text>
-        <Text>Funciona por favor</Text>
-        <Text style={styles.texto1}>Funciona por favor</Text>
-        <Text>Funciona por favor</Text>
-        <StatusBar style="auto" />
-      </View>
+      <Botoes></Botoes>
+      <Card titulo='sem conteúdo'></Card>
+      <Card titulo='Victor'>
+        <Text>React Native</Text>
+      </Card>
 
-      <Card></Card>
+      <Card titulo='mobile'>
+        <Text>Parágrafo 1</Text>
+        <Text>Parágrafo 2</Text>
+        <Text>Parágrafo 3</Text>
+        <Button title='Detalhes'></Button>
+      </Card>
 
-      <View style={styles.card}>
-        <Text style={styles.textoBorda}>Acho que está funcionando</Text>
-        <Text>Acho que está funcionando</Text>
-        <Text style={styles.texto1}>Acho que está funcionando</Text>
-        <Text>Acho que está funcionando</Text>
-        <StatusBar style="auto" />
-      </View>
+      <Card titulo='framengo'>
 
-      <View style={styles.card}>
-        <Text style={styles.textoBorda}>Funcionou</Text>
-        <Text>Funcionou</Text>
-        <Text style={styles.texto1}>Funcionou</Text>
-        <Text>Funcionou</Text>
-        <StatusBar style="auto" />
-      </View>
+      </Card>
 
     </ScrollView>
   );
