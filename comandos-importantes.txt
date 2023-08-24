@@ -22,3 +22,8 @@ Para exibir na web:
 		      "favicon": "./assets/favicon.png",
 		      "bundler": "metro"
 		    }
+
+Para instalar React Native Paper:
+        $ npm install react-native-paper
+	$ npm install react-native-safe-area-context
+

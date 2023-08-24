@@ -1,29 +1,15 @@
 import { StatusBar } from 'expo-status-bar';
 import { Button, ScrollView, StyleSheet, Text, View } from 'react-native';
-import Card from './components/Card';
-import Botoes from './components/Botoes';
+import Page1 from './screens/Page1';
+import Page2 from './screens/Page2';
+import Page4 from './screens/Page4';
 
 export default function App() {
   return (
     <ScrollView style={{ marginTop: 50 }}>
 
-      <Botoes></Botoes>
-      <Card titulo='sem conteúdo'></Card>
-      <Card titulo='Victor'>
-        <Text>React Native</Text>
-      </Card>
-
-      <Card titulo='mobile'>
-        <Text>Parágrafo 1</Text>
-        <Text>Parágrafo 2</Text>
-        <Text>Parágrafo 3</Text>
-        <Button title='Detalhes'></Button>
-      </Card>
-
-      <Card titulo='framengo'>
-
-      </Card>
-
+      <Page4/>
+      
     </ScrollView>
   );
 }
