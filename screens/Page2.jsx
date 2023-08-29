@@ -7,6 +7,10 @@ const Page2 = () => {
     return (
 
         <>
+
+            <Button title='Página 1' onPress={() => navigation.navigate('Page1')} />
+            <Button title='Página 4' onPress={() => navigation.navigate('Page4')} />
+
             <Card>
                 <Card.Title title="Card Title" subtitle="Card Subtitle" left={LeftContent} />
                 <Card.Content>

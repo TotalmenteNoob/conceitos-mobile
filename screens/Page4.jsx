@@ -11,6 +11,10 @@ const info = ["Pedro", "Tiago", "João", "Mateus"]
 const Page4 = () => {
     return (
         <>
+
+            <Button title='Página 1' onPress={() => navigation.navigate('Page1')} />
+            <Button title='Página 2' onPress={() => navigation.navigate('Page2')} />
+
             <Card style={{ margin: 10 }}>
                 <Card.Title title="Card Title" subtitle="Card Subtitle" left={LeftContent} />
                 <Card.Actions>

@@ -23,7 +23,10 @@ Para exibir na web:
 		      "bundler": "metro"
 		    }
 
-Para instalar React Native Paper:
-        $ npm install react-native-paper
+Para instalar o Paper:
+	$ npm install react-native-paper
 	$ npm install react-native-safe-area-context
 
+Para instalar o Navigator para navegar entre as páginas: 
+	$ npm install @react-navigation/native @react-navigation/native-stack
+	$ npx expo install react-native-screens react-native-safe-area-context

@@ -3,9 +3,13 @@ import { Button, Text } from 'react-native'
 import Botoes from '../components/Botoes'
 import Card from '../components/Card'
 
-const Page1 = () => {
+const Page1 = ({ navigation }) => {
+
     return (
         <>
+            <Button title='Página 2' onPress={() => navigation.navigate('Page2')} />
+            <Button title='Página 4' onPress={() => navigation.navigate('Page4')} />
+
             <Botoes />
             <Card titulo='sem conteúdo'></Card>
             <Card titulo='Victor'>
